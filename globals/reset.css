@@ -1,0 +1,73 @@
+/* Reset copied from Jason Knight. Edited by Pertti Martikainen. */
+html,
+body,
+address,
+blockquote,
+div,
+form,
+fieldset,
+caption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ul,
+li,
+ol,
+ul,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+th,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img,
+fieldset {
+  border: none;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  overflow-wrap: break-word;
+}
+
+svg,
+picture,
+video,
+img {
+  max-width: 100%;
+}
+
+p,
+li {
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+a {
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+}

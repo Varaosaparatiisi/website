@@ -1,0 +1,50 @@
+main {
+  margin: 2rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+svg {
+  fill: #fff;
+  vertical-align: bottom;
+}
+
+.close {
+  background-color: #000;
+  color: #fff ;
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+table {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+thead {
+  padding: 1rem;
+  text-align: left;
+}
+
+th {
+  border: 1px solid #ddd;
+  padding: .5rem .75rem;
+}
+
+tr {
+  border-spacing: 0;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 0.5rem 0.75rem;
+}
+
+footer {
+  padding: 0;
+}

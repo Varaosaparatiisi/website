@@ -1,0 +1,43 @@
+/* Copied from https://github.com/nuejs/create-nue/tree/master/%40base  edited by Pertti Martikainen. */
+
+button, [role="button"] {
+  background-color: #000;
+  border: solid 0.1rem #ffd400;
+  padding: .7em 1.4em;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+
+  /* states */
+  &:hover { background-color: #333 }
+  &:active { transform: scale(.98) }
+
+  &.call-for-action {
+    color: #ffd400;
+    font-size: 1.25em;
+    text-transform: uppercase;
+  }
+
+  &.primary {
+    background: transparent;
+    border: solid 0.1rem #000;
+    color: #333;
+  }
+
+  &.download {
+    color: #ffd400;
+    display: inline;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  &.telephone {
+    background: transparent;
+    border: none;
+    font-size: 1.25em;
+  }
+
+}

@@ -1,0 +1,50 @@
+.pitch {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/customer_small.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.text-box p {
+  margin: 0.5rem 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 64rem) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    font-size: 4em;
+    overflow-wrap: break-word;
+    hyphens: maual;
+  }
+
+  .image-box {
+    padding-top: unset;
+  }
+
+  iframe {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+}

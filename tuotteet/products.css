@@ -1,0 +1,58 @@
+.pitch {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/products.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+ul {
+  flex-direction: column;
+  margin: 0 0 2rem 1rem;
+}
+
+li {
+  list-style: unset;
+  font-size: 1.25em;
+  font-weight: 300;
+}
+
+.primary {
+  width: 12rem;
+}
+
+img {
+  height: 36rem;
+}
+
+@media (max-width: 64rem) {
+  h1 {
+    font-size: 1.75em;
+  }
+
+  h2 {
+    font-size: 4em;
+    overflow-wrap: break-word;
+    hyphens: maual;
+  }
+
+  img {
+    height: unset;
+  }
+}
+
+/*
+@media (max-width: 36rem) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+}
+  */

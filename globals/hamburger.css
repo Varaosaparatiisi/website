@@ -1,0 +1,35 @@
+#burger {
+  background-image: url(/img/hamburger.svg);
+  background-size: cover;
+  cursor: pointer;
+  fill: #fff;
+  margin-top: 2.5rem;
+  height: 5em;
+  width: 5rem;
+}
+
+#close {
+  background-image: url(/img/close.svg);
+  background-size: cover;
+  cursor: pointer;
+  fill: #fff;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  height: 4em;
+  width: 4rem;
+}
+
+@media (max-width: 48rem) {
+  #burger {
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  #close {
+    margin-top: 0;
+    margin-right: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
