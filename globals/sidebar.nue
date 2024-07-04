@@ -1,0 +1,19 @@
+<div @name="sidebar" id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+  </div>
+  <nav class="sidenav">
+    <li><a href="/">Etusivu</a></li>
+    <li><a href="/huolto">Huolto</a></li>
+    <li><a href="/testaus">Testaus</a></li>
+    <li><a href="/tuotteet">Tuotteet</a></li>
+    <li><a href="/asiakkaat">Asiakkaat</a></li>
+    <li><a href="/yhteys">Yhteys</a></li>
+  </nav>
+  <script>
+    constructor() {
+      addEventListener("switch", (e)=> {
+        sidebar.classList.toggle("show")
+      })
+    }
+ </script>
+</div>

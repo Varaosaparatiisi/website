@@ -1,0 +1,12 @@
+<div @name="icon-switch" class="switch" @click="switch">
+  <a aria-label="Avaa ja sulkee sivuvalikon."></a>
+  <script>
+    switch(e) {
+      setTimeout(()=> {
+        e.originalTarget.classList.toggle("hide-burger")
+      }, 300)
+      const event = new Event("switch")
+      dispatchEvent(event)
+    }
+  </script>
+</div>

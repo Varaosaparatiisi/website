@@ -1,67 +1,52 @@
 .pitch {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/repair.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100vh;
-  width: 100%;
+}
+
+h2 {
+  hyphens: manual;
 }
 
 .image-box + a {
-  margin-top: 2rem;
+  margin: 1rem;
 }
 
 .videos {
-  flex-direction: column;
-  align-items: center;
+  padding: 1rem 0;
 }
 
 .videos h3 {
   text-align: center;
 }
 
-iframe {
-  margin: 1rem;
+element {
+  display: flex;
   width: 100%;
-  max-width: 36rem;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+	height: 100%;
+	width: 100%;
 }
 
 .video-box {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  padding: 0 1rem;
   width: 100%;
 }
 
-@media (max-width: 64rem) {
-  h1 {
-    font-size: 1.75em;
+@media (width >= 64rem) {
+  .videos {
+    flex-direction: column;
   }
 
-  h2 {
-    font-size: 4em;
-    overflow-wrap: break-word;
-    hyphens: maual;
-  }
-
-  .image-box {
-    padding-top: unset;
+  .video-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
   }
 
   iframe {
-    max-width: 20rem;
-  }
-}
-
-@media (max-width: 36rem) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 2.5em;
+    flex-basis: 35%;
+    margin: 1rem;
   }
 }

@@ -3,7 +3,7 @@
 button, [role="button"] {
   background-color: #000;
   border: solid 0.1rem #ffd400;
-  padding: .7em 1.4em;
+  padding: 0.5rem 1rem;
   display: inline-block;
   text-align: center;
   font-weight: 500;
@@ -24,18 +24,25 @@ button, [role="button"] {
     background: transparent;
     border: solid 0.1rem #000;
     color: #333;
+    
+    &.disabled {
+      border: solid 0.1rem var(--medium-gray);
+      color: var(--medium-gray);
+      cursor: unset;
+    }
   }
 
   &.download {
     color: #ffd400;
-    display: inline;
     font-size: 1rem;
     text-transform: uppercase;
-    width: 100%;
+    width: 16rem;
+
+    /* followed by another button */
+    + & { margin-top: .5em; }
   }
 
   &.telephone {
-    background: transparent;
     border: none;
     font-size: 1.25em;
   }

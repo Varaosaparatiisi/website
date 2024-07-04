@@ -1,0 +1,41 @@
+.sidebar {
+  background-color: var(--sidebar-background);
+  position: fixed;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  padding: 1rem 1rem;
+  width: 16rem;
+  transition: 0.3s ease-out;
+}
+
+.sidebar-header {
+  margin-bottom: 4rem;
+}
+
+.sidenav a {
+  color: var(--sidebar-color);
+  margin-bottom: 1rem;
+}
+
+.show {
+  left: calc(100% - 16rem);
+}
+
+@media (width >= 30rem) {
+  .sidebar-header {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (width >= 64rem) {
+  .sidebar {
+    width: 24rem;
+  }
+  .sidebar-header {
+    margin-bottom: 8rem;
+  }
+  .show {
+    left: calc(100% - 24rem);
+  }  
+}

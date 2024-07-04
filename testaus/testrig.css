@@ -1,0 +1,7 @@
+.pitch {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/testrig.jpg");
+}
+
+a {
+  color: unset;
+}

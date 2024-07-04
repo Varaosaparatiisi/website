@@ -2,25 +2,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <header>
-  <div class="menu">
-    <a href="/">
-      <img src="/img/logo_white.png" alt="Liekeissä oleva ratas.">
+  <div class="page-top">
+    <a href="/"> 
+      <img src="/img/logo-white.png" alt="Veranos Oy:n logo.">
     </a>
-    <a id="burger" aria-label="Avaa sivuvalikon."></a>
+    <icon-switch></icon-switch>
   </div>
-  <aside id="sidebar">
-    <div>
-      <div id="close" aria-label="Sulkee sivuvalikon."></div>
-    </div>
-    <nav>
-      <a href="/">Etusivu</a>
-      <a href="/huolto">Huolto</a>
-      <a href="/testipenkki">Testaus</a>
-      <a href="/tuotteet">Varaosat</a>
-      <a href="/asiakkaat">Asiakkaat</a>
-      <a href="/yhteys">Ota yhteyttä</a>
-    </nav>
-  </aside>
+  <sidebar></sidebar>
 </header>
 <main>
   <section class="pitch">
@@ -73,8 +61,7 @@
         <h3>
           Varaosat ja komponentit
         </h3>
-        <p>Meiltä löydät alkuperäiset varaosat suoraan hyllystä useisiin hydraulipumppuihin ja -moottoreihin sekä vetonapoihin.</p>
-        <p>Varastoimme vetonapoja, uusia ja kunnostettuja hydraulipumppuja, kääntömoottoreita sekä kääntökehiä.</p>
+        <p>Meiltä löydät alkuperäiset varaosat suoraan hyllystä useisiin hydraulipumppuihin ja -moottoreihin sekä vetonapoihin. Varastoimme vetonapoja, uusia ja kunnostettuja hydraulipumppuja, kääntömoottoreita sekä kääntökehiä.</p>
         <a role="button" class="primary" href="tuotteet">
           Lue lisää
         </a>
@@ -85,24 +72,22 @@
     </article>
   </section>
   <section class="partners">
-    <div>
       <img src="/img/kh-koneet-logo.png" alt="KH-Koneet Oy:n logo">
-      <img src="/img/wihuri-logo.png" alt="KH-Tekninen Kauppa Oy:n logo">
-      <img src="/img/rexroth.png" alt="Bosch Rexroth logo">
-      <img src="/img/kpm.png" alt="Kawasaki Precision Machinery log">
+      <img src="/img/wihuri-logo-small.png" alt="KH-Tekninen Kauppa Oy:n logo">
+      <img src="/img/rexroth-small.png" alt="Bosch Rexroth logo">
+      <img src="/img/kpm-small.png" alt="Kawasaki Precision Machinery log">
       <img src="/img/infra.png" alt="Infra ry:n logo">
-    </div>
   </section>
 </main>
 <footer>
-  <div class="text-box">
+  <div class="address-box">
     <p>Veranos Oy Varaosaparatiisi</p>
     <p>Koskelontie 18 C g-h</p>
     <p>02920 Espoo</p>
     <p>FINLAND</p>
     <p>Y-tunnus: 1085972-4</p>
   </div>
-  <div class="text-box">
+  <div>
     <a role="button" class="download">
       Lähetysohjeet
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
@@ -112,9 +97,9 @@
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
     </a>
   </div>
-  <div class="text-box">
+  <div>
     <a href="/">
-      <img src="/img/logo_white.png" alt="Liekeissä oleva ratas.">
+      <img src="/img/logo-white.png" alt="Liekeissä oleva ratas.">
     </a>
     <a role="button" class="telephone" href="tel:+358440343307">
       +358 440 343 307

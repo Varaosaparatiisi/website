@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.custom-input:first-child {
-  margin-bottom: 1.5rem;
-}
-
 input {
   background: transparent;
   border: 0.05rem solid #dedede;
@@ -22,7 +18,7 @@ input {
   cursor: text;
   color: var(--medium-gray);
   transition: 0.3s ease-in-out;
-  pointer-events: none; /* Without this we can not click input because label does not foeward click event. */
+  pointer-events: none; /* Without this we can not click input because label does not forward click event. */
 }
 
 input:focus + .label,
