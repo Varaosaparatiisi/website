@@ -19,7 +19,7 @@ header {
   width: 100%;
 }
 
-header img {
+.logo {
   height: 4rem;
 }
 
@@ -80,13 +80,20 @@ article {
   padding: 1rem;
 }
 
-article:nth-child(even) {
-  background-color: var(--light-gray);
+.column {
+  max-width: 48rem;
+  padding: 1rem;
 }
 
-.text-box {
-  padding: 1rem;
-  max-width: 36rem;
+/*
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+*/  
+
+article:nth-child(even) {
+  background-color: var(--light-gray);
 }
 
 h3 {
@@ -99,31 +106,22 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-.text-box p {
+.column p {
   font-size: 1.25rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
 
-.image-box {
-  text-align: center;
-}
-
-img {
-  height: 100%;
-  max-height: 32rem;
+.column .primary {
+  width: 12rem;
 }
 
 .partners {
   background-color: #eaeaea;
-  padding: 3rem;
-  display: flex;
-  flex-direction: column;
 }
 
-.partners img {
-  margin: 1.5rem 2rem;
-  object-fit: scale-down;
+.partners .column {
+  text-align: center;
 }
 
 footer {
@@ -131,20 +129,10 @@ footer {
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.address-box {
-  text-align: start;
-  width: 16rem;
-}
-
-footer > div {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
+footer a {
+  text-align: center;
 }
 
 .download svg {
@@ -153,24 +141,13 @@ footer > div {
   vertical-align: bottom;
 }
 
-footer img {
-  max-width: 20rem;
-  width: 100%;
-}
-
-@media (width >= 30rem) {
-  header img {
+@media (width > 36rem) {
+  .logo {
     height: 6rem;
   }
+
   .sidenav a {
     font-size: 1.5rem;
-  }
-
-}
-
-@media (width >= 64rem) {
-  header img {
-    height: 8rem;
   }
 
   article {
@@ -179,31 +156,28 @@ footer img {
     align-items: center;
   }
 
-  .text-box {
-    flex: 1 0 32rem;
-  }
-
-  .image-box {
-    padding: 1rem;
-  }
-
-  .partners {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .partners img {
-    width: 18rem;
+  .column {
+    flex: 1 1 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
   }
 
   footer {
+    display: flex;
     flex-direction: row;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
   }
 
-  footer div {
-    flex: 1;
-    padding: 2rem;
+  footer .column {
+    flex: 1 1 30%;
+  }
+}
+
+@media (width >= 64rem) {
+  #logo {
+    height: 8rem;
   }
 }

@@ -6,47 +6,39 @@ h2 {
   hyphens: manual;
 }
 
-.image-box + a {
-  margin: 1rem;
+.column-footer {
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 .videos {
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .videos h3 {
   text-align: center;
 }
 
-element {
-  display: flex;
+.videos div {
   width: 100%;
+}
+
+.videos .column {
+  max-width: 48rem;
 }
 
 iframe {
   aspect-ratio: 16 / 9;
-	height: 100%;
 	width: 100%;
 }
 
-.video-box {
-  padding: 0 1rem;
-  width: 100%;
-}
-
-@media (width >= 64rem) {
-  .videos {
-    flex-direction: column;
+@media (width > 36rem) {  
+  .column-footer {
+    margin-top: 3rem;
   }
-
-  .video-box {
+  .videos div {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-  }
-
-  iframe {
-    flex-basis: 35%;
-    margin: 1rem;
-  }
+  }      
 }
