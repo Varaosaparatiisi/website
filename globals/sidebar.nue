@@ -15,5 +15,5 @@
         sidebar.classList.toggle("show")
       })
     }
- </script>
+  </script>
 </div>

@@ -19,7 +19,7 @@
 }
 
 .show {
-  left: calc(100% - 16rem);
+  transform: translateX(-100%);
 }
 
 @media (width >= 30rem) {
@@ -35,7 +35,4 @@
   .sidebar-header {
     margin-bottom: 8rem;
   }
-  .show {
-    left: calc(100% - 24rem);
-  }  
 }
