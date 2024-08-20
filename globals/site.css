@@ -14,13 +14,19 @@ body, button, input, table, textarea, select, label {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   padding: 1rem;
   width: 100%;
+  background-color: transparent;
+  transition: background-color 0.4s;
+}
+
+header.scrolled {
+  background-color: #000;
 }
 
 .logo {
-  height: 4rem;
+  height: 5rem;
 }
 
 .page-top {
@@ -59,6 +65,7 @@ a {
 
 .pitch div {
   padding: 0 1rem;
+  margin-top: calc(2.5em + 1.5vw);
 }
 
 h1 {
@@ -71,9 +78,10 @@ h1 {
 
 h2 {
   color: var(--light-gray);
-  font-size: calc(2.5em + 1.5vw);
+  font-size: calc(2.25em + 1.25vw);
   text-transform: uppercase;
   margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
 article {
@@ -98,12 +106,17 @@ article:nth-child(even) {
 
 h3 {
   font-size: calc(2em + 1.5vw);
+  line-height: 1;
   margin-bottom: 1rem;
 }
 
 h4 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+
+h5 {
   font-size: 1.5em;
-  margin-bottom: 0.5rem;
 }
 
 .column p {
@@ -118,17 +131,29 @@ h4 {
 
 .partners {
   background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .partners .column {
-  text-align: center;
+  max-width: 24rem;
+  max-height: 16rem;
+  object-fit: contain;
 }
 
 footer {
-  background-color: #000;
+  background-color: #333;
   color: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 3rem 2rem;
   text-align: center;
+}
+
+address {
+  font-style: normal;
 }
 
 footer a {
@@ -141,9 +166,60 @@ footer a {
   vertical-align: bottom;
 }
 
-@media (width > 36rem) {
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.social img {
+  border: none;
+  width: 36px;
+  height: 36px;
+}
+
+.bottom {
+  background-color: var(--steel-gray);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+[popover] {
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  padding: 0.25em;
+  overflow: auto;
+  border: none;
+  background: transparent;
+}
+
+:popover-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 320px;
+}
+
+div::backdrop {
+  backdrop-filter: blur(2px);
+}
+
+@media (width > 30rem) {
+  header {
+    padding: 1rem 2rem;
+  }
+
   .logo {
-    height: 6rem;
+    height: 6.5rem;
   }
 
   .sidenav a {
@@ -163,6 +239,10 @@ footer a {
     padding: 2rem;
   }
 
+  .partners {
+    flex-direction: row;
+  }  
+
   footer {
     display: flex;
     flex-direction: row;
@@ -172,12 +252,14 @@ footer a {
   }
 
   footer .column {
+    display: flex;
+    align-items: center;
     flex: 1 1 30%;
   }
 }
 
 @media (width >= 64rem) {
-  #logo {
+  .logo {
     height: 8rem;
   }
 }

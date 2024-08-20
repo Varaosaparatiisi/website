@@ -1,0 +1,53 @@
+<form @name="contact-form" @submit.prevent="submit">
+  <fieldset>
+    <label for="name">Nimi:</label>
+    <input type="text" id="name" name="name" required oninvalid="setCustomValidity('Nimi on pakollinen tieto.')" oninput="setCustomValidity('')" />
+    <label for="email">Sähköposti:</label>
+    <input type="email" id="email" name="email" required oninvalid="setCustomValidity('Sähköposti on pakollinen tieto.')" oninput="setCustomValidity('')"/>
+    <label for="phone">Puhelin:</label>
+    <input type="tel" id="phone" name="phone" required oninvalid="setCustomValidity('Puhelinnumero on pakollinen tieto.')" oninput="setCustomValidity('')"/>
+    <label for="message">Viesti:</label>
+    <textarea rows=4 name="message"></textarea>
+    <input type="checkbox" id="confirm" required oninvalid="setCustomValidity('Valitse tämä ennen lähettämistä.')" oninput="setCustomValidity('')"/>
+    <label for="confirm">Olen lukenut
+      <a href="../Hydraulikomponentin-lahetysohjeet.pdf" target="_blank">lähetysohjeet</a> ja <a href="../TKYleiset2010.pdf" target="_blank">sopimusehdot</a>
+    </label>
+  </fieldset>
+  <button class="primary" popovertarget="spinpop">LÄHETÄ</button>
+  <spinner-popover :msg="message" :show="showSpinner"></spinner-popover>
+  <script>
+
+  async submit({ submitter, target }) {
+    const popover = submitter.popoverTargetElement
+    this.message = "Lähetetään lomaketta ..."
+    this.showSpinner = true
+    this.$refs["spinner-popover"].update()
+    
+    try {
+      popover.showPopover()
+      await this.tryToSubmitForm(target)
+      this.message = "Kiitos viestistäsi."
+    } catch (err) {
+      this.message = err.message
+    }
+
+    this.showSpinner = false
+    this.$refs["spinner-popover"].update()
+  }
+
+  async tryToSubmitForm(form) {
+    const formData = new FormData(form)
+
+    const options = {
+      method: "POST",
+      body: formData
+    }
+
+    const response = await fetch("/message", options)
+  
+    if (response.status !== 200) {
+      throw await response.json()
+    }
+  }
+  </script>
+</form>

@@ -1,0 +1,10 @@
+<div @name="spinner-popover" id="spinpop" popover>
+  <a class="close" @click="close">&times;</a>
+  <p>{ msg }</p>
+  <span class="spinner" :if="show"></span>
+  <script>
+    close() {
+      spinpop.hidePopover()
+    }
+  </script>
+</div>

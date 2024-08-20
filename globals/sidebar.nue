@@ -7,7 +7,7 @@
     <li><a href="/testaus">Testaus</a></li>
     <li><a href="/tuotteet">Tuotteet</a></li>
     <li><a href="/asiakkaat">Asiakkaat</a></li>
-    <li><a href="/yhteys">Yhteys</a></li>
+    <li><a href="/yhteys">Ota yhteyttä</a></li>
   </nav>
   <script>
     constructor() {

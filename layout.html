@@ -1,5 +1,6 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script module scr="./main.js"></script>
 </head>
 <header>
   <div class="page-top">
@@ -74,25 +75,40 @@
   <section>
     <article class="partners">
       <div class="column">
-        <img src="/img/kh-koneet-logo.png" alt="KH-Koneet Oy:n logo">
+        <a href="https://www.boschrexroth.com/fi/fi/" target="_blank">
+          <img src="/img/rexroth-small.png" alt="Bosch Rexroth logo">
+        </a>
       </div>
       <div class="column">
-        <img src="/img/wihuri-logo-small.png" alt="KH-Tekninen Kauppa Oy:n logo">
+        <a href="https://global.kawasaki.com/en/industrial_equipment/hydraulic/index.html" target="_blank">
+          <img src="/img/kpm-small.png" alt="Kawasaki Precision Machinery logo">
+        </a>
       </div>
       <div class="column">
-        <img src="/img/rexroth-small.png" alt="Bosch Rexroth logo">
+        <a href="https://kh-koneet.fi" target="_blank">
+          <img src="/img/kh-koneet-logo-testi.png" alt="KH-Koneet Oy:n logo">
+        </a>
       </div>
       <div class="column">
-        <img src="/img/kpm-small.png" alt="Kawasaki Precision Machinery log">
+        <a href="https://kobelcocenter.fi" target="_blank">
+          <img src="/img/kh-tekninen-logo-testi.png" alt="KH-Tekninen kauppa Oy:n logo">
+        </a>
       </div>
       <div class="column">
-      <img src="/img/infra.png" alt="Infra ry:n logo">
+        <a href="https://tekninenkauppa.fi" target="_blank">
+          <img src="/img/wihuri-tk-logo.png" alt="KH-Tekninen Kauppa Oy:n logo">
+        </a>
+      </div>
+      <div class="column">
+        <a href="https://omainfra.fi/aluetoiminta/infra-uusimaa/" target="_blank">
+          <img src="/img/rt-infra-logo.png" alt="Infra ry:n logo">
+        </a>
       </div>
     </article>
   </section>
 </main>
 <footer>
-  <div class="column">
+  <address class="column">
     <p>
       Veranos Oy Varaosaparatiisi<br>
       Koskelontie 18 C g-h<br>
@@ -100,30 +116,29 @@
       FINLAND<br>
       Y-tunnus: 1085972-4<br>
     </p>
-  </div>
+  </address>
   <div class="column">
-    <a role="button" class="download">
+    <a role="button" class="download" href="../Hydraulikomponentin-lahetysohjeet.pdf" target="_blank">
       Lähetysohjeet
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
     </a>
-    <a role="button" class="download">
+    <a role="button" class="download" href="../TKYleiset2010.pdf" target="_blank">
       Sopimusehdot
       <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
     </a>
   </div>
   <div class="column">
-    <a href="/">
-      <img class="logo" src="/img/logo-white.png" alt="Liekeissä oleva ratas.">
-    </a>
     <a role="button" class="telephone" href="tel:+358440343307">
       +358 440 343 307
     </a>
+    <div class="social">
+      <a href="https://www.facebook.com/hydrauliikkahuolto" target="_blank">
+        <img src="img/facebook.svg" alt="Facebook logo">
+      </a>
+      <a href="https://www.youtube.com/@varaosaparatiisi1915" target="_blank">
+        <img src="img/youtube.svg" alt="Youtube logo">
+      </a>
+    </div>   
   </div>
 </footer>
-
-<div @name="custom-input" class="custom-input">
-  <input placeholder="" required type="{ type }" pattern="{ pattern }" name="{ type }"/>
-  <label class="label" for="input">{ label }</label>
-  <div class="icon">{ icon }</div>
-  <label class="error">{ error }</label>
-</div>
+<div @name="bottom" class="bottom">© Varaosaparatiisi | Verkkosivut Logistor Oy</div>

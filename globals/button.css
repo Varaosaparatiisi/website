@@ -33,6 +33,7 @@ button, [role="button"] {
   }
 
   &.download {
+    background-color: #333;
     color: #ffd400;
     font-size: 1rem;
     text-transform: uppercase;
@@ -45,6 +46,7 @@ button, [role="button"] {
   &.telephone {
     border: none;
     font-size: 1.25em;
+    background-color: #333
   }
 
 }
