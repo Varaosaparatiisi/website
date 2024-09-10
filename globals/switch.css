@@ -11,16 +11,9 @@
   background-image: url(/img/close.svg);  
 }
 
-@media (width >= 30rem) {
-  .switch {
-    height: 4rem;
-    width: 4rem;
-  }
-}
-
 @media (width >= 64rem) {
   .switch {
-    width: 5rem;
-    height: 5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }

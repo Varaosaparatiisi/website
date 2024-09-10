@@ -14,22 +14,22 @@ body, button, input, table, textarea, select, label {
 }
 
 header {
+  background: transparent;
   position: fixed;
-  padding: 1rem;
   width: 100%;
-  background-color: transparent;
   transition: background-color 0.4s;
 }
 
 header.scrolled {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .logo {
-  height: 5rem;
+  height: 3rem;
 }
 
 .page-top {
+  padding: 0.25rem 1rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -219,7 +219,7 @@ div::backdrop {
   }
 
   .logo {
-    height: 6.5rem;
+    height: 3rem;
   }
 
   .sidenav a {
@@ -260,6 +260,6 @@ div::backdrop {
 
 @media (width >= 64rem) {
   .logo {
-    height: 8rem;
+    height: 4rem;
   }
 }
