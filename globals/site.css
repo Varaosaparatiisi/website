@@ -22,10 +22,11 @@ header {
 
 header.scrolled {
   background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0,0,0,.15);
 }
 
 .logo {
-  height: 3rem;
+  height: 4rem;
 }
 
 .page-top {
@@ -50,15 +51,18 @@ a {
   color: var(--light-gray);
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .pitch {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/frontpage.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  margin-bottom: 1rem;
   height: 100vh;
   width: 100%;
 }
@@ -86,6 +90,7 @@ h2 {
 
 article {
   padding: 1rem;
+  max-width: 72rem;
 }
 
 .column {
@@ -93,14 +98,7 @@ article {
   padding: 1rem;
 }
 
-/*
-.column img {
-  max-width: 100%;
-  height: auto;
-}
-*/  
-
-article:nth-child(even) {
+section:nth-child(odd) {
   background-color: var(--light-gray);
 }
 
@@ -130,7 +128,6 @@ h5 {
 }
 
 .partners {
-  background-color: #eaeaea;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -152,8 +149,9 @@ footer {
   text-align: center;
 }
 
-address {
+#address {
   font-style: normal;
+  font-size: 1em;
 }
 
 footer a {
@@ -175,7 +173,6 @@ footer a {
 
 .social img {
   border: none;
-  width: 36px;
   height: 36px;
 }
 
@@ -219,7 +216,7 @@ div::backdrop {
   }
 
   .logo {
-    height: 3rem;
+    height: 4rem;
   }
 
   .sidenav a {
@@ -260,6 +257,6 @@ div::backdrop {
 
 @media (width >= 64rem) {
   .logo {
-    height: 4rem;
+    height: 6rem;
   }
 }

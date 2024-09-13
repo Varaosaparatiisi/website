@@ -1,6 +1,13 @@
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <script module scr="./main.js"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id=G-3CKZWTZD43"></script>
+  <script client>
+    window.dataLayer = window.dataLayer || []
+    function gtag(){ dataLayer.push(arguments) }
+    gtag('js', new Date())
+    gtag('config', 'G-3CKZWTZD43')
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
 </head>
 <header>
   <div class="page-top">
@@ -20,7 +27,7 @@
       <h2>
         Huolto - testaus - varaosat
       </h2>
-      <a role="button" class="call-for-action" href="/yhteys">
+      <a role="button" class="call-to-action" href="/yhteys">
         Pyydä tarjous
       </a>  
     </div>
@@ -42,6 +49,8 @@
         <img src="/img/pump-and-spares.jpg" alt="Kaksoishydraulipumppu sekä sen osista.">
       </div>
     </article>
+  </section>
+  <section>
     <article>
       <div class="column">
         <img src="/img/testrig_small.jpg" alt="Testipenkki putkistoineen sekä pumppu/moottorikomponentit.">
@@ -57,6 +66,8 @@
         </a>
       </div>
     </article>
+  </section>
+  <section>
     <article>
       <div class="column">
         <h3>
@@ -109,7 +120,7 @@
 </main>
 <footer>
   <address class="column">
-    <p>
+    <p id="address">
       Veranos Oy Varaosaparatiisi<br>
       Koskelontie 18 C g-h<br>
       02920 Espoo<br>
@@ -140,12 +151,6 @@
       </a>
     </div>   
   </div>
-  <!--
-  <script>
-    var agent = window.navigator.userAgent;
-    var mobile = /Android|iPhone|Opera/i.test(agent);
-    if (mobile) console.log("mobile device.");
-  </script>
-  -->
+  <script module scr="./main.js"></script>
 </footer>
-<div @name="bottom" class="bottom">© Varaosaparatiisi | Verkkosivut Logistor Oy</div>
+<!--<div @name="bottom" class="bottom">© Varaosaparatiisi | Verkkosivut Logistor Oy</div>-->

@@ -1,7 +1,27 @@
-title: Varaosaparatiisi
-description: Ammattilaisten hydraulihuolto
-favicon: /img/fav-varaosaparatiisi.png
-
 globals: [globals]
-
 port: 5500
+
+favicon: /img/favicon.png
+title: Ammattilaisten hydraulihuolto
+description: "Korkealuokkaista hydraulihuoltoa laatua arvostaville yrityksille."
+
+header:
+  logo:
+    - image: /img/logo-white.png
+      class: logo
+      
+  icon-switch:
+    
+  Master navigation:
+    - Huolto: /huolto/
+    - Testaus: /testaus/
+    - Tuotteet: /tuotteet/
+    - Asiakkaat: /asiakkaat/
+    - Ota yhteyttä: /yhteys/
+
+burger_menu:
+  - Huolto: /huolto/
+  - Testaus: /testaus/
+  - Tuotteet: /tuotteet/
+  - Asiakkaat: /asiakkaat/
+  - Ota yhteyttä: /yhteys/

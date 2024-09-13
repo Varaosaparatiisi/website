@@ -14,7 +14,7 @@ button, [role="button"] {
   &:hover { background-color: #333 }
   &:active { transform: scale(.98) }
 
-  &.call-for-action {
+  &.call-to-action {
     color: #ffd400;
     font-size: 1.25em;
     text-transform: uppercase;
