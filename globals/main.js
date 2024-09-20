@@ -23,6 +23,9 @@ window.addEventListener("load", () => {
       elem.setAttribute("href", "tel:+358440343307")
     });
   }
+
+  const cookieConsent = document.getElementById("cc-main")
+  cookieConsent.classList.add('cc--darkmode')
 })
 
 import 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js'
@@ -60,8 +63,8 @@ CookieConsent.run({
       translations: {
           fi: {
               consentModal: {
-                  title: 'Tämä sivusto käyttää evästeitä.',
-                  description: '',
+                  title: 'Sivustomme käyttää evästeitä.',
+                  description: ' ',
                   acceptAllBtn: 'Hyväksy kaikki',
                   acceptNecessaryBtn: 'Hylkää kaikki',
                   showPreferencesBtn: 'Muokka evästeasetuksia'
@@ -74,24 +77,24 @@ CookieConsent.run({
                   closeIconLabel: 'Sulje ikkuna',
                   sections: [
                       {
-                          title: 'Sanoiko joku ... evästeitä?',
-                          description: 'Minä ainakin haluan!'
+                          title: '',
+                          description: ''
                       },
                       {
                           title: 'Vain ehdottoman välttämättömät',
-                          description: 'These cookies are essential for the proper functioning of the website and cannot be disabled.',
+                          description: 'Nämä evästeet ovat välttämättömiä sivuston toiminnalle, eikä niitä voi kytkeä pois.',
 
                           //this field will generate a toggle linked to the 'necessary' category
                           linkedCategory: 'necessary'
                       },
                       {
-                          title: 'Performance and Analytics',
-                          description: 'These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.',
+                          title: 'Suorituskyky ja analytiikka',
+                          description: 'Nämä evästeet keräävät tietoa siitä, kuinka käytät sivustoa. Kaikki data on anonymisoitu eikä sitä voi käyttää kehenkään tunnistamiseen.',
                           linkedCategory: 'analytics'
                       },
                       {
-                          title: 'More information',
-                          description: 'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>'
+                          title: 'Lisätietoja',
+                          description: 'Evästeisiin liittyvissä kysymyksissä voit olla <a href="/yhteys">yhteydessä</a> meihin.'
                       }
                   ]
               }
